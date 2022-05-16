@@ -3,11 +3,11 @@
     <h3 class="text-cyan-800 font-bold mb-6">INFO</h3>
 
     <ul>
-      <li>Company</li>
-      <li>Company</li>
-      <li>Company</li>
-      <li>Company</li>
-      <li>Company</li>
+      <li v-for="listItem in list" :key="listItem">
+        <a href="#">
+          {{ listItem }}
+        </a>
+      </li>
     </ul>
   </div> 
 </template>
@@ -15,5 +15,16 @@
 <script>
 export default {
   name: 'info',
+  data() {
+    return {
+      list: [
+        'COMPANY',
+        'FRANCHISE',
+        'PARTNERS',
+        'CONTACT',
+        'FAQ',
+      ]
+    }
+  },
 }
 </script>
