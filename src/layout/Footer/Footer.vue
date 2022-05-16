@@ -1,0 +1,19 @@
+<template>
+  <footer class="bg-cyan-100 text-cyan-600 p-3">
+    <Links />
+    <Legal />
+  </footer>
+</template>
+
+<script>
+import Links from './Links/Links.vue';
+import Legal from './Legal/Legal.vue';
+
+export default {
+  name: 'footer',
+  components: {
+    Links,
+    Legal,
+  },
+}
+</script>
