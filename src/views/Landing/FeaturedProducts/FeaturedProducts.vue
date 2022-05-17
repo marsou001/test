@@ -7,18 +7,23 @@
     </div>
 
     <div class="view-all">
-      <button class="text-normal text-xl font-bold">View All</button>
+      <router-link :to="featuredProductsRoute" class="text-normal text-xl font-bold">View All</router-link>
     </div>
   </section>
 </template>
 
 <script>
-import FeaturedProduct from '@/components/FeaturedProduct.vue'
+import FeaturedProduct from '@/components/FeaturedProduct.vue';
 
 export default {
   name: 'featured-products',
   components: { 
-    FeaturedProduct
+    FeaturedProduct,
+  },
+  computed: {
+    featuredProductsRoute() {
+      return { name: 'featured-products' };
+    },
   },
 }
 </script>

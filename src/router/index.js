@@ -11,7 +11,7 @@ const routes = [
     path: '/featured-products',
     name: 'featured-products',
     component: () => 
-      import('@/views/FeaturedProducts'),
+      import('@/views/FeaturedProducts/FeaturedProducts'),
   }
 ]
 
