@@ -1,4 +1,5 @@
 <template>
+  <Links />
   <Navbar />
 
   <main>
@@ -9,12 +10,14 @@
 </template>
 
 <script>
+import Links from './layout/Links/Links.vue';
 import Navbar from './layout/Navbar/Navbar.vue';
 import Footer from './layout/Footer/Footer.vue';
 
 export default {
   name: 'App',
   components: {
+    Links,
     Navbar,
     Footer,
   }

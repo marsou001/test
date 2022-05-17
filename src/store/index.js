@@ -1,10 +1,15 @@
 import { createStore } from 'vuex';
 
 const store = createStore({
-  state () {
+  state() {
     return {
       cartItems: 0,
     }
+  },
+  getters: {
+    cartItems(state) {
+      return state.cartItems;
+    },
   },
   mutations: {
     addItemToCart(state) {

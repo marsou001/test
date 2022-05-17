@@ -22,7 +22,7 @@
       </select>
     </div>
 
-    <button class="text-white bg-normal text-2xl font-bold block mb-2 py-2 px-3 rounded-lg">Add to Cart</button>
+    <button class="text-white bg-normal text-2xl font-bold block mb-2 py-2 px-3 rounded-lg" @click="addToCart">Add to Cart</button>
 
     <span class="font-medium text-left block">Share this</span>
   </div> 
@@ -31,5 +31,10 @@
 <script>
 export default {
   name: 'add-to-cart',
+  methods: {
+    addToCart() {
+      this.$store.commit('addItemToCart');
+    },
+  },
 }
 </script>

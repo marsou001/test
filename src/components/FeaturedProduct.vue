@@ -8,7 +8,7 @@
     </div>
 
     <div class="featured-product__call_to_action">
-      <button class="text-white bg-normal font-light py-2 px-6">Add to Cart</button>
+      <button class="text-white bg-normal font-light py-2 px-6" @click="addToCart">Add to Cart</button>
     </div>
   </div>
 </template>
@@ -27,7 +27,12 @@ export default {
           productName: this.product.name,
         }
       }
-    }
+    },
+  },
+  methods: {
+    addToCart() {
+      this.$store.commit('addItemToCart');
+    },
   },
 }
 </script>
