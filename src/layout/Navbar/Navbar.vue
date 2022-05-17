@@ -1,17 +1,25 @@
 <template>
   <header class="mb-3">
     <div class="search text-right">
-      <input type="search" name="search" id="search" class="hidden md:inline-block md:mb-2 border-2 border-blue-400" />
+      <input type="search" name="search" id="search" class="hidden mlg:inline-block mlg:mb-2 border-2 border-blue-400" />
     </div>
-    <div class="header-nav flex justify-between">
-      <div class="logo">
-        <!-- logo -->
+    <div class="header-nav flex justify-between items-center">
+      <div class="logo text-weak text-2xl md:text-5xl flex items-center">
+        <font-awesome-icon :icon="['fas', 'baseball']" class="mr-2" />
+        <div>
+          InterGreen 
+          <!-- <hr /> -->
+          <!-- <span class="text-sm">distributors</span> -->
+        </div>
       </div>
-      <div class="hamburger-menu md:hidden" @click="toggleShowDropdownMenu">
+      <div class="hamburger-menu mlg:hidden" @click="toggleShowDropdownMenu">
         <font-awesome-icon :icon="['fas', 'bars']" />
       </div>
-      <nav class="hidden md:block">
+      <nav class="hidden mlg:block">
         <ul class="text-normal">
+          <li class="inline mx-3">
+            <font-awesome-icon :icon="['fas', 'house']" />
+          </li>
           <li class="inline mx-3">HOME</li>
           <li class="inline mx-3">CUPS</li>
           <li class="inline mx-3">SPOONS</li>
@@ -23,11 +31,14 @@
     </div>
   </header>
 
-  <nav v-if="showDropdownMenu" class="md:hidden">
+  <nav v-if="showDropdownMenu" class="mlg:hidden">
     <div class="search">
-      <input type="search" name="search" id="search" />
+      <input type="search" name="search" id="search" class="mb-2 border-2 border-normal" />
     </div>
-    <ul class="text-normal">
+    <ul class="text-normal mb-2">
+      <li class="inline mx-3">
+        <font-awesome-icon :icon="['fas', 'house']" />
+      </li>
       <li>HOME</li>
       <li>CUPS</li>
       <li>SPOONS</li>
