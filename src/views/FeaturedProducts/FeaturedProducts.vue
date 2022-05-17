@@ -13,7 +13,7 @@
     </aside>
 
     <div class="featured-products grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ml-3">
-      <FeaturedProduct v-for="i in 6" :key="i" />
+      <FeaturedProduct v-for="product in featuredProducts" :key="product.name" :product="product" />
     </div>
   </section>
 </template>
@@ -24,9 +24,30 @@ import FeaturedProduct from '@/components/FeaturedProduct.vue';
 
 export default {
   name: 'featured-products',
+  data() {
+    return {
+      featuredProducts: [],
+    }
+  },
   components: {
     Category,
     FeaturedProduct,
   },
+  mounted() {
+    this.fetchFeaturedProducts();
+  },
+  methods: {
+    fetchFeaturedProducts() {
+      const product = {
+        pictureURL: '',
+        name: 'Vestibulum tincidunt tellus a metus hendrer',
+        price: 199.29,
+      }
+
+      for (let i = 0; i < 6; i++) {
+        this.featuredProducts.push(product);
+      }
+    }
+  }
 }
 </script>

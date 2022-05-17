@@ -3,8 +3,8 @@
     <div class="featured-product__picture bg-weak w-full h-64"></div>
 
     <div class="featured-product__info flex justify-between py-3">
-      <div class="featured-product__info_name text-normal text-left w-3/5">Vestibulum tincidunt tellus a metus hendrer</div>
-      <div class="featured-product__info_price text-normal font-bold">$ 199.29</div>
+      <router-link :to="featuredProductRoute" class="featured-product__info_name text-normal text-left w-3/5">{{ product.name }}</router-link>
+      <div class="featured-product__info_price text-normal font-bold">$ {{ product.price }}</div>
     </div>
 
     <div class="featured-product__call_to_action">
@@ -16,5 +16,18 @@
 <script>
 export default {
   name: 'featured-product',
+  props: {
+    product: Object,
+  },
+  computed: {
+    featuredProductRoute() {
+      return {
+        name: 'featured-product',
+        params: {
+          productName: this.product.name,
+        }
+      }
+    }
+  },
 }
 </script>

@@ -12,6 +12,12 @@ const routes = [
     name: 'featured-products',
     component: () => 
       import('@/views/FeaturedProducts/FeaturedProducts'),
+  },
+  {
+    path: '/featured-products/:productName',
+    name: 'featured-product',
+    component: () => 
+      import('@/views/FeaturedProduct/FeaturedProduct'),
   }
 ]
 
