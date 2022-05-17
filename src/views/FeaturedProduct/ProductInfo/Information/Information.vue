@@ -2,7 +2,7 @@
   <div class="information p-6">
     <Head />
     <hr class="mt-1 mb-6" />
-    <div class="main-wrapper md:flex">
+    <div class="main-wrapper mlg:flex">
       <Description />
       <AddToCart />
     </div>
