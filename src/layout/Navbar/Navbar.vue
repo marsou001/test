@@ -52,7 +52,7 @@ export default {
   name: 'navbar',
   data() {
     return {
-      showDropdownMenu: true,
+      showDropdownMenu: false,
     }
   },
   methods: {
