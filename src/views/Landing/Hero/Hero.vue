@@ -3,7 +3,7 @@
     <div class="carousel bg-weak flex flex-col md:flex-row md:justify-between" data-carousel-item>
       <div class="picture hidden md:block md:w-1/2"></div>
       <div class="description md:text-right py-10 px-6">
-        <h1 class="text-normal text-6xl font-bold mb-8">Suspendisse interdum rutrum nise.</h1>
+        <h1 class="text-normal text-3xl sm:text-6xl font-bold mb-8">Suspendisse interdum rutrum nise.</h1>
         <p class="text-normal text-2xl">Ut tellus quam, venenatis non tempus vitae, volupat blandit libero eget elos</p>
       </div>
     </div>
