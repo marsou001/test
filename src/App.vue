@@ -9,14 +9,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
 import Navbar from './layout/Navbar/Navbar.vue';
 import Footer from './layout/Footer/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     Navbar,
     Footer,
   }
