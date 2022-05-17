@@ -24,8 +24,9 @@ const store = createStore({
     setProducts(state, data) {
       state.products = data;
     },
-    addItemToCart(state) {
-      state.cartItems++;
+    addItemToCart(state, data = 1) {
+      console.log(data)
+      state.cartItems += data;
     },
     setError(state, data) {
       state.error = data;

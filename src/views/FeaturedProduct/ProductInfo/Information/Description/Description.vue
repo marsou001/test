@@ -20,9 +20,7 @@ export default {
       return this.$store.getters.products;
     },
     product() {
-      const res = this.products.find(product => product.id === Number(this.productId));
-      console.log(res)
-      return res;
+      return this.products.find(product => product.id === Number(this.productId));
     },
   },
 }

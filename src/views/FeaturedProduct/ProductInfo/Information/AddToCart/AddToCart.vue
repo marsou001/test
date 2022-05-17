@@ -7,7 +7,7 @@
 
     <div class="quantity flex justify-between mb-2">
       <span>Quantity:</span>
-      <input type="number" name="quantity" id="quantity" class="border-2 w-1/2" />
+      <input type="number" name="quantity" id="quantity" v-model="quantity" class="border-2 w-1/2" />
     </div>
 
     <div class="color flex justify-between mb-4">
@@ -28,6 +28,7 @@ export default {
   name: 'add-to-cart',
   data() {
     return {
+      quantity: 0,
       colorOptions: ['Black', 'Orange', 'Green', 'Red', 'Blue'],
     }
   },
@@ -39,14 +40,12 @@ export default {
       return this.$store.getters.products;
     },
     product() {
-      const res = this.products.find(product => product.id === Number(this.productId));
-      console.log(res)
-      return res;
+      return this.products.find(product => product.id === Number(this.productId));
     },
   },
   methods: {
     addToCart() {
-      this.$store.commit('addItemToCart');
+      this.$store.commit('addItemToCart', this.quantity);
     },
   },
 }
