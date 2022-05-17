@@ -13,6 +13,6 @@
 
 <script>
 export default {
-  name: 'landing',
+  name: 'hero',
 }
 </script>

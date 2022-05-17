@@ -5,7 +5,7 @@ const routes = [
     path: '/',
     name: 'landing',
     component: () => 
-      import('@/views/Landing'),
+      import('@/views/Landing/Landing'),
   },
   {
     path: '/featured-products',
