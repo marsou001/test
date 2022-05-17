@@ -1,6 +1,6 @@
 <template>
   <form class="text-left">
-    <h3 class="text-strong font-bold mb-6">FOLLOW US</h3>
+    <h3 class="text-strong font-bold mb-3">FOLLOW US</h3>
 
     <label for="email" class="text-normal">GET OUR NEWSLETTER</label>
     <input type="email" name="email" id="email" class="block my-3 border-2 border-normal" />

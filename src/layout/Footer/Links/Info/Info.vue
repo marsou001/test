@@ -1,6 +1,6 @@
 <template>
  <div class="text-left">
-    <h3 class="text-strong font-bold mb-6">INFO</h3>
+    <h3 class="text-strong font-bold mb-3">INFO</h3>
 
     <ul>
       <li v-for="listItem in list" :key="listItem" class="text-normal">
