@@ -8,7 +8,7 @@
 
     <div class="view-all">
       <router-link :to="featuredProductsRoute" class="text-normal text-xl font-bold">
-        <font-awesome-icon :icon="['fas', 'arrow-right']" class="mr-2" />
+        <font-awesome-icon :icon="['fas', 'arrow-right']" class="text-weak text-3xl mr-2" />
         <br />
         <span>View All</span>
       </router-link>
