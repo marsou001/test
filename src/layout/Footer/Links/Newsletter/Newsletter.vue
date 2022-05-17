@@ -1,11 +1,11 @@
 <template>
   <form class="text-left">
-    <h3 class="text-cyan-800 font-bold mb-6">FOLLOW US</h3>
+    <h3 class="text-strong font-bold mb-6">FOLLOW US</h3>
 
-    <label for="email">GET OUR NEWSLETTER</label>
-    <input type="email" name="email" id="email" class="block my-3 border-2 border-cyan-600" />
+    <label for="email" class="text-normal">GET OUR NEWSLETTER</label>
+    <input type="email" name="email" id="email" class="block my-3 border-2 border-normal" />
 
-    <button type="submit" class="text-white bg-cyan-600 font-bold px-6 py-1">SIGN UP</button>
+    <button type="submit" class="text-white bg-normal font-bold px-6 py-1">SIGN UP</button>
 
     <div class="social-links">
       <div class="facebook">facebook</div>

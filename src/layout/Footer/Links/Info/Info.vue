@@ -1,9 +1,9 @@
 <template>
  <div class="text-left">
-    <h3 class="text-cyan-800 font-bold mb-6">INFO</h3>
+    <h3 class="text-strong font-bold mb-6">INFO</h3>
 
     <ul>
-      <li v-for="listItem in list" :key="listItem">
+      <li v-for="listItem in list" :key="listItem" class="text-normal">
         <a href="#">
           {{ listItem }}
         </a>
