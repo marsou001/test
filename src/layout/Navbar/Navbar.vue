@@ -1,15 +1,14 @@
 <template>
   <header class="mb-3">
     <div class="search text-right">
-      <input type="search" name="search" id="search" class="hidden md:block border-2 border-blue-400" />
+      <input type="search" name="search" id="search" class="hidden md:inline-block md:mb-2 border-2 border-blue-400" />
     </div>
     <div class="header-nav flex justify-between">
       <div class="logo">
-        <!-- <font-awesome-icon icon="fa-solid fa-bars" /> -->
-        logo
+        <!-- logo -->
       </div>
       <div class="hamburger-menu md:hidden" @click="toggleShowDropdownMenu">
-        hamburger
+        <font-awesome-icon :icon="['fas', 'bars']" />
       </div>
       <nav class="hidden md:block">
         <ul class="text-normal">
