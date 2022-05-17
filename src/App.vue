@@ -20,6 +20,18 @@ export default {
     Links,
     Navbar,
     Footer,
+  },
+  async mounted() {
+    await this.fetchProducts(); 
+  },
+  methods: {
+    async fetchProducts() {
+      try {
+        await this.$store.dispatch('fetchProducts');
+      } catch (error) {
+        console.log(error);
+      }
+    }
   }
 }
 </script>
