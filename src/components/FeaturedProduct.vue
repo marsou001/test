@@ -1,9 +1,11 @@
 <template>
   <div class="featured-product">
-    <div class="featured-product__picture bg-weak w-full h-64"></div>
+    <div class="featured-product__picture overflow-hidden w-full h-64">
+      <img :src="product.image" :alt="product.title" />
+    </div>
 
     <div class="featured-product__info flex justify-between py-3">
-      <router-link :to="featuredProductRoute" class="featured-product__info_name text-normal text-left w-3/5">{{ product.name }}</router-link>
+      <router-link :to="featuredProductRoute" class="featured-product__info_name text-normal text-left w-3/5">{{ product.title.slice(0, 21) }}</router-link>
       <div class="featured-product__info_price text-normal font-bold">$ {{ product.price }}</div>
     </div>
 
@@ -24,7 +26,7 @@ export default {
       return {
         name: 'featured-product',
         params: {
-          productName: this.product.name,
+          productId: this.product.id,
         }
       }
     },

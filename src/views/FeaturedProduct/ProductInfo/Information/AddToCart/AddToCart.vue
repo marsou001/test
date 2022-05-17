@@ -2,7 +2,7 @@
   <div class="add-to-cart text-normal font-bold md:ml-3">
     <div class="price flex justify-between mb-2">
       <span>Price:</span>
-      <span>$ 199.99</span>
+      <span>$ {{ product.price }}</span>
     </div>
 
     <div class="quantity flex justify-between mb-2">
@@ -13,12 +13,7 @@
     <div class="color flex justify-between mb-4">
       <span>Color:</span>
       <select name="color" id="color" class="border-2">
-        <option value="White">White</option>
-        <option value="Black">Black</option>
-        <option value="Orange">Orange</option>
-        <option value="Green">Green</option>
-        <option value="Red">Red</option>
-        <option value="Blue">Blue</option>
+        <option v-for="option in colorOptions" :key="option" :value="option">{{ option }}</option>
       </select>
     </div>
 
@@ -31,6 +26,24 @@
 <script>
 export default {
   name: 'add-to-cart',
+  data() {
+    return {
+      colorOptions: ['Black', 'Orange', 'Green', 'Red', 'Blue'],
+    }
+  },
+  computed: {
+    productId() {
+      return this.$route.params.productId;
+    },
+    products() {
+      return this.$store.getters.products;
+    },
+    product() {
+      const res = this.products.find(product => product.id === Number(this.productId));
+      console.log(res)
+      return res;
+    },
+  },
   methods: {
     addToCart() {
       this.$store.commit('addItemToCart');

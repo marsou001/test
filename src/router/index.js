@@ -14,7 +14,7 @@ const routes = [
       import('@/views/FeaturedProducts/FeaturedProducts'),
   },
   {
-    path: '/featured-products/:productName',
+    path: '/featured-products/:productId',
     name: 'featured-product',
     component: () => 
       import('@/views/FeaturedProduct/FeaturedProduct'),
