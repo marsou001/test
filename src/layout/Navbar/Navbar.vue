@@ -1,7 +1,7 @@
 <template>
-  <header>
+  <header class="mb-3">
     <div class="search text-right">
-      <input type="search" name="search" id="search" class="border-2 border-blue-400" />
+      <input type="search" name="search" id="search" class="hidden md:block border-2 border-blue-400" />
     </div>
     <div class="header-nav flex justify-between">
       <div class="logo">
@@ -12,7 +12,7 @@
         hamburger
       </div>
       <nav class="hidden md:block">
-        <ul class="text-blue-400">
+        <ul class="text-normal">
           <li class="inline mx-3">HOME</li>
           <li class="inline mx-3">CUPS</li>
           <li class="inline mx-3">SPOONS</li>
@@ -28,7 +28,7 @@
     <div class="search">
       <input type="search" name="search" id="search" />
     </div>
-    <ul class="text-blue-400">
+    <ul class="text-normal">
       <li>HOME</li>
       <li>CUPS</li>
       <li>SPOONS</li>
