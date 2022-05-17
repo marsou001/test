@@ -5,7 +5,7 @@
     </div>
 
     <div class="featured-product__info flex justify-between py-3">
-      <router-link :to="featuredProductRoute" class="featured-product__info_name text-normal text-left w-3/5">{{ product.title.slice(0, 21) }}</router-link>
+      <router-link :to="featuredProductRoute" class="featured-product__info_name text-normal text-left w-3/5">{{ product.title.slice(0, 18) }}...</router-link>
       <div class="featured-product__info_price text-normal font-bold">$ {{ product.price }}</div>
     </div>
 
