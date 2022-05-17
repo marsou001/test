@@ -1,5 +1,5 @@
 <template>
-  <div class="featured-product">
+  <div class="featured-product p-3 border-2 border-normal rounded-lg">
     <div class="featured-product__picture overflow-hidden w-full h-64">
       <img :src="product.image" :alt="product.title" />
     </div>
