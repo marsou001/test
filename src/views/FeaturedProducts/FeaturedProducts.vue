@@ -1,7 +1,7 @@
 <template>
   <Category />
   
-  <section class="flex flex-col lg:flex-row md:justify-between mb-9">
+  <section class="flex flex-col lg:flex-row md:justify-between mb-9 p-6">
     <aside class="lg:w-60 lg:mr-3 mb-3">
       <h3 class="text-normal bg-weak text-left py-1 px-2">FILTER NAME</h3>
       <ul>

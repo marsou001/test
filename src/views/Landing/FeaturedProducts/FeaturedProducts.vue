@@ -1,5 +1,5 @@
 <template>
-  <section class="featured-products mb-6">
+  <section class="featured-products mb-6 p-6">
     <h1 class="text-normal text-3xl font-bold pb-9">Featured Products</h1>
 
     <div class="featured-products-grid-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-6">

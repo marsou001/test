@@ -1,5 +1,5 @@
 <template>
-  <section data-carousel="static" class="mb-12">
+  <section data-carousel="static" class="mb-12 p-6">
     <div class="carousel bg-weak flex flex-col md:flex-row md:justify-between" data-carousel-item>
       <div class="picture hidden md:block md:w-1/2"></div>
       <div class="description md:text-right py-10 px-6">

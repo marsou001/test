@@ -1,5 +1,5 @@
 <template>
-  <div class="information p-6">
+  <div class="information mlg:p-6">
     <Head />
     <hr class="mt-1 mb-6" />
     <div class="main-wrapper mlg:flex">

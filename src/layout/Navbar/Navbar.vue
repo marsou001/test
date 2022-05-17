@@ -1,5 +1,5 @@
 <template>
-  <header class="mb-3">
+  <header class="mb-3 p-6">
     <div class="search text-right">
       <input type="search" name="search" id="search" class="hidden mlg:inline-block mlg:mb-2 border-2 border-blue-400" />
     </div>

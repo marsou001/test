@@ -1,5 +1,5 @@
 <template>
-  <header class="mb-12">
+  <header class="mb-12 p-6">
     <div class="nav-tree text-normal text-xs text-left mb-1">
       Home > Category Name
     </div>
