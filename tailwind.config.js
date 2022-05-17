@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        weak: '#CBE3E6',
-        normal: '#63ACB6',
-        strong: '#377580',
+        weak: '#d1d5db',
+        normal: '#6b7280',
+        strong: '#1f2937',
       },
       screens: {
         mlg: '992px',
