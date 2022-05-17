@@ -1,6 +1,6 @@
 <template>
-  <div class="links text-normal bg-weak">
-    items {{ cartItems }}
+  <div class="links text-strong font-bold bg-weak">
+    {{ cartItems }} items
   </div>
 </template>
 
