@@ -54,4 +54,4 @@ The main thing I want you to see, is the "quantity option". You can choose the n
 3) I changed the colors, and added pictures, because I thought it was required. While my main focus was to prove that I can work with SPA JS libraries, I took some time to implement them, even though the design is not the same now as the one sent to me.
 
 4) I hope that by this test, I proved that I can work effectively as a front-end developer.
-I created a responsive design, I used state, routing, lifecycle methods.
+I created a responsive design, I used state, routing, lifecycle methods, events, and event-emitting.
