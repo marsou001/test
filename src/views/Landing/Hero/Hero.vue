@@ -1,4 +1,6 @@
 <template>
+
+  <!-- Carousel work-in-progress -->
   <section data-carousel="static" class="mb-12 p-6">
     <div class="carousel bg-weak flex flex-col md:flex-row md:justify-between" data-carousel-item>
       <div class="picture hidden md:block md:w-1/2"></div>
